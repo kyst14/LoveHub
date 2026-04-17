@@ -67,10 +67,14 @@ npm run start
 
 Or deploy directly via the Vercel dashboard.
 
+---
+
 ## ❤️ Philosophy
 
 LoveHub is built around the idea that small digital experiences can carry real
 emotion. Every interaction is designed to feel personal, thoughtful, and unique.
+
+---
 
 ## 📌 Note
 
