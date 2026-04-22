@@ -106,9 +106,9 @@ export function PinInput({
 					onChange={e => handleChange(index, e.target.value)}
 					onKeyDown={e => handleKeyDown(index, e)}
 					onPaste={handlePaste}
-					className="w-12 h-12 text-center text-3xl md:text-2xl md:h-10 md:w-10 font-sans border-2 border-primary 
-                     rounded-xl focus:border-primary/50 focus:outline-none transition-all
-                     bg-primary/10"
+					className="w-12 h-12 text-center text-3xl md:text-2xl md:h-10 md:w-10 font-sans border-2 border-secondary 
+                     rounded-xl focus:border-secondary/50 focus:outline-none transition-all
+                     bg-secondary/10"
 				/>
 			))}
 		</div>

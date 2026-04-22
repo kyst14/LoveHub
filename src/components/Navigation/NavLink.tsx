@@ -1,37 +1,31 @@
+import { INavItem } from '@/config/nav.config'
 import Link from 'next/link'
-import { LucideIcon } from 'lucide-react'
-
-interface NavLinkProps {
-	href: string
-	icon: LucideIcon
-	label?: string
-	className?: string
-	active?: boolean
-}
 
 export const NavLink = ({
 	href,
 	icon: Icon,
 	label,
 	className = '',
-	active = false
-}: NavLinkProps) => {
+	active = false,
+	style
+}: INavItem) => {
 	return (
 		<Link
 			href={href}
-			className={`group flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all duration-200
-        ${
-			active
-				? 'bg-zinc-800 text-white'
-				: 'hover:bg-zinc-900/50 text-zinc-400 hover:text-white'
-		} ${className}`}
+			aria-label={label}
+			title={label}
+			className={`group h-full flex justify-center items-center gap-3 px-6 py-2.5 rounded-full transition-all duration-200 ${className}
+				${active ? 'text-text' : 'text-text/50 hover:text-text/90'}
+			`}
+			style={style}
 		>
 			<Icon
-				size={22}
-				className={`transition-all group-hover:scale-110 ${active ? 'text-white' : ''}`}
+				size={24}
+				color="currentColor"
+				strokeWidth={2}
 			/>
 
-			{label && <span className="font-medium">{label}</span>}
+			<span className="block">{label}</span>
 		</Link>
 	)
 }

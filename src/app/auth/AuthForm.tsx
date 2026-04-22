@@ -33,7 +33,7 @@ export const AuthForm = () => {
 
 	return (
 		<>
-			<form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-primary/50 p-4 px-8 rounded-2xl">
+			<form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-secondary/50 p-4 px-8 rounded-2xl">
 				<h1 className="text-2xl font-bold font-sans">Код доступа</h1>
 
 				<div className="flex flex-col md:flex-row justify-center items-center gap-4">
@@ -44,7 +44,7 @@ export const AuthForm = () => {
 
 					<button
 						type="submit"
-						className="px-6 py-2 bg-primary text-white rounded-full cursor-pointer active:scale-95 transition-all"
+						className="px-6 py-2 bg-secondary text-white rounded-full cursor-pointer active:scale-95 transition-all"
 					>
 						Войти
 					</button>
